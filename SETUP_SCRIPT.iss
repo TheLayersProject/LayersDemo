@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Layers Demo"
-#define MyAppVersion "0.16.0"
+#define MyAppVersion "0.17.0"
 #define MyAppPublisher "The Layers Project"
 #define MyAppURL "https://github.com/TheLayersProject/Layers"
 #define MyAppExeName "LayersDemo.exe"

@@ -32,25 +32,25 @@ int main(int argc, char *argv[])
 	QLApplication app(argc, argv,
 		"Layers Demo",
 		QUuid("f97aae7f-2076-4918-93ce-19321584f675"));
-	app.set_github_repo("TheLayersProject/Layers");
+	app.set_github_repo("TheLayersProject/LayersDemo");
 	app.set_publisher("The Layers Project");
-	app.set_version("0.16.0");
+	app.set_version("0.17.0");
 	app.init();
 
-	if (app.update_available())
-	{
-		QLUpdateDialog update_dialog =
-			QLUpdateDialog(app.version(), app.latest_version());
+	//if (app.update_available())
+	//{
+	//	QLUpdateDialog update_dialog =
+	//		QLUpdateDialog(app.version(), app.latest_version());
 
-		update_dialog.apply_theme_item(
-			activeTheme()->find_item(update_dialog.path()));
+	//	update_dialog.apply_theme_item(
+	//		activeTheme()->find_item(update_dialog.path()));
 
-		if (update_dialog.exec())
-		{
-			app.download_and_install_update();
-			return 0;
-		}
-	}
+	//	if (update_dialog.exec())
+	//	{
+	//		app.download_and_install_update();
+	//		return 0;
+	//	}
+	//}
 
 	LayersDemoWindow window;
 	window.apply_theme_item(activeTheme()->find_item(window.path()));
